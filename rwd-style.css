@@ -1,0 +1,521 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    font-size: 18px;
+}
+
+body {
+    background-image: url("image/liang halfway bg2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* 電腦版開始 */
+
+/* 電腦版(尺寸大於992px)媒體查詢 */
+@media screen and (min-width:992px) {
+    .container {
+        width: 90%;
+        margin: 60px auto;
+        background-color: #fff;
+        position: relative;
+        border-radius: 50px;
+        box-shadow: 0px 0px 20px 1px #000;
+
+    }
+
+    .mylogo {
+        position: absolute;
+        top: 170px;
+        left: 60px;
+        z-index: 1000;
+    }
+
+    .myheader {
+        height: 500px;
+        background-image: url("image/nature-4481585_1920.jpeg");
+        background-size: cover;
+        background-position: left center;
+        border-radius: 50px 50px 0px 0px;
+        /* 透明度 */
+        opacity: 0.7;
+    }
+
+    .mynav {
+        width: 100%;
+        background-color: #6E4836;
+        position: absolute;
+        top: 447px;
+        border-radius: 20px 20px 0px 0px;
+        box-shadow: 0px -10px 40px 10px #000;
+        opacity: 0.8;
+    }
+
+    .mynav ul {
+        /* 去掉文字前的黑點 */
+        list-style-type: none;
+        text-align: center;
+
+    }
+
+    .mynav li {
+        /* 行內區塊。以inline的方式呈現，但同時擁有block的屬性。 */
+        display: inline-block;
+        padding: 12px 25px;
+    }
+
+    .mynav a {
+        color: #fff;
+        font-size: 1.2rem;
+        /* 超連結預設底線去除 */
+        text-decoration: none;
+        transition: 0.8s;
+    }
+
+    .mynav a:hover {
+        color: #F7DEB7;
+        text-shadow: 0px 0px 3px #000;
+    }
+
+    .mymain {
+        width: 70%;
+        float: left;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .mymain h1 {
+        font-size: 2rem;
+        text-align: center;
+        color: #6E4836;
+        margin: 15px;
+    }
+
+    .mymain h3 {
+        color: #bca79d;
+    }
+
+    .mymain p {
+        color: #000;
+        font: none none 1rem/28px;
+        line-height: 30px;
+        text-indent: 2em;
+        text-align: justify;
+        padding: 20px 0px;
+    }
+
+    .mymain img {
+        width: 100%;
+        margin-top: 20px;
+        /* border: 5px solid #fdd763; */
+        border-radius: 40px;
+        box-sizing: border-box;
+
+    }
+
+    .myaside {
+        width: 30%;
+        float: left;
+        padding: 20px;
+        /* padding內含在30%裡面 */
+        box-sizing: border-box;
+    }
+
+    .myaside-a,
+    .myaside-b {
+        color: #000;
+        text-align: justify;
+        font-size: 0.8rem;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+
+    .myaside h2 {
+        background-color: #fdd763;
+        color: #6E4836;
+        text-align: center;
+        border-radius: 30px;
+        padding: 5px;
+    }
+
+    .myaside img {
+        width: 100%;
+        height: auto;
+        margin: 20px 0px;
+        transition: 0.8s;
+
+    }
+
+    .myaside img:hover {
+        box-shadow: 0px 0px 10px 5px #424242;
+        border: 5px solid #fff;
+        border-radius: 40px;
+    }
+
+
+    .myfooter {
+        clear: both;
+        text-align: center;
+        padding: 40px 0px;
+        background-image: linear-gradient(0deg, #6E4836 10%, #A37965 70%);
+        border-radius: 0px 0px 50px 50px;
+    }
+
+    .myfooter a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1rem;
+        padding-right: 20px;
+    }
+
+    .myfooter a:hover {
+        color: #F7DEB7;
+    }
+
+    .myfooter h3 {
+        color: rgb(255, 255, 255, 0.6);
+        font-size: 1rem;
+    }
+
+    .myfooter h3 span {
+        font-size: 0.7rem;
+    }
+
+}
+
+/* 電腦版結束 */
+
+
+/* 平板版(尺寸576~991)的媒體查詢 */
+@media screen and (min-width:576px) and (max-width:991px) {
+
+    .container {
+        background-color: #fff;
+        position: relative;
+    }
+
+    .mylogo {
+        position: absolute;
+        top: 170px;
+        left: 60px;
+        z-index: 1000;
+    }
+
+    .myheader {
+        height: 500px;
+        background-image: url("image/nature-4481585_1920.jpeg");
+        background-size: cover;
+        background-position: left center;
+        /* 透明度 */
+        opacity: 0.7;
+    }
+
+    .mynav {
+        width: 100%;
+        background-color: #6E4836;
+        position: absolute;
+        top: 447px;
+        box-shadow: 0px -10px 40px 10px #000;
+        opacity: 0.8;
+    }
+
+    .mynav ul {
+        /* 去掉文字前的黑點 */
+        list-style-type: none;
+        text-align: center;
+        columns: 5;
+    }
+
+    .mynav li {
+        padding: 12px 0px;
+    }
+
+    .mynav a {
+        color: #fff;
+        font-size: 1.2rem;
+        /* 超連結預設底線去除 */
+        text-decoration: none;
+        transition: 0.8s;
+    }
+
+    .mynav a:hover {
+        color: #F7DEB7;
+        text-shadow: 0px 0px 3px #000;
+    }
+
+    .myaside {
+        padding: 40px;
+        box-sizing: border-box;
+    }
+
+    .myaside-a,
+    .myaside-b {
+        width: 50%;
+        float: left;
+        color: #000;
+        text-align: justify;
+        line-height: 35px;
+        padding: 0px 10px;
+        box-sizing: border-box;
+    }
+
+    .myaside p {
+        font-size: 1rem;
+    }
+
+    .myaside h2 {
+        background-color: #fdd763;
+        color: #6E4836;
+        text-align: center;
+        border-radius: 30px;
+        padding: 5px;
+        margin: 10px auto;
+        font-size: 1.2rem;
+
+    }
+
+    .myaside img {
+        width: 100%;
+        margin-top: 20px;
+        transition: 0.6s;
+
+    }
+
+    .myaside img:hover {
+        box-shadow: 0px 0px 10px 5px #424242;
+        border: 5px solid #fff;
+        border-radius: 50px;
+    }
+
+    .mymain {
+        padding: 40px;
+        box-sizing: border-box;
+        clear: both;
+    }
+
+    .mymain h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        color: #fff;
+        background-color: #6E4836;
+        border-radius: 30px;
+        padding: 5px;
+
+    }
+
+    .mymain h3 {
+        color: #bca79d;
+    }
+
+    .mymain p {
+        color: #000;
+        font-size: 1rem;
+        line-height: 35px;
+        text-indent: 2em;
+        text-align: justify;
+    }
+
+    .mymain img {
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 40px;
+
+    }
+
+    .myfooter {
+        text-align: center;
+        padding: 40px 0px;
+        background-image: linear-gradient(0deg, #6E4836 10%, #A37965 70%);
+    }
+
+    .myfooter a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1rem;
+        padding-right: 20px;
+        transition: 0.7s;
+
+    }
+
+    .myfooter a:hover {
+        color: #F7DEB7;
+    }
+
+    .myfooter h3 {
+        color: rgb(255, 255, 255, 0.6);
+        font-size: 1rem;
+    }
+
+    .myfooter h3 span {
+        font-size: 0.7rem;
+    }
+}
+
+/* 平板版結束 */
+
+
+/* 手機版(小於576)的媒體查詢 */
+@media screen and (max-width:575px) {
+
+    .container {
+        background-color: #fff;
+        position: relative;
+    }
+
+    .mylogo {
+        position: absolute;
+        top: 40px;
+        left: 90px;
+        z-index: 1000;
+    }
+
+    .myheader {
+        height: 200px;
+        background-image: url("image/nature-4481585_1920.jpeg");
+        background-position: right bottom;
+        /* 透明度 */
+        opacity: 0.7;
+    }
+
+    .mynav {
+        background-color: #6E4836;
+        box-shadow: 0px 0px 10px 5px #424242;
+    }
+
+    .mynav ul {
+        /* 去掉文字前的黑點 */
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .mynav li {
+        padding: 12px 0px;
+    }
+
+    .mynav a {
+        color: #fff;
+        font-size: 1.2rem;
+        /* 超連結預設底線去除 */
+        text-decoration: none;
+        transition: 0.8s;
+    }
+
+    .mynav a:hover {
+        color: #F7DEB7;
+        text-shadow: 0px 0px 3px #000;
+    }
+
+    .myaside {
+        padding: 40px;
+        box-sizing: border-box;
+    }
+
+    .myaside-a,
+    .myaside-b {
+        color: #000;
+        text-align: justify;
+        line-height: 35px;
+        box-sizing: border-box;
+    }
+
+    .myaside p {
+        font-size: 1rem;
+    }
+
+    .myaside h2 {
+        background-color: #fdd763;
+        color: #6E4836;
+        text-align: center;
+        border-radius: 30px;
+        padding: 5px;
+        margin: 10px auto;
+        font-size: 1.2rem;
+
+    }
+
+    .myaside img {
+        width: 100%;
+        margin-top: 20px;
+        transition: 0.6s;
+
+    }
+
+    .myaside img:hover {
+        box-shadow: 0px 0px 10px 5px #424242;
+        border: 5px solid #fff;
+        border-radius: 50px;
+    }
+
+    .mymain {
+        padding: 40px;
+        box-sizing: border-box;
+    }
+
+    .mymain h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        color: #fff;
+        background-color: #6E4836;
+        border-radius: 30px;
+        padding: 5px;
+
+    }
+
+    .mymain h3 {
+        color: #bca79d;;
+        padding: 20px 0px;
+    }
+
+    .mymain p {
+        color: #000;
+        font-size: 1rem;
+        line-height: 35px;
+        text-indent: 2em;
+        text-align: justify;
+    }
+
+    .mymain img {
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 40px;
+
+    }
+
+    .myfooter {
+        text-align: center;
+        padding: 40px 0px;
+        background-image: linear-gradient(0deg, #6E4836 10%, #A37965 70%);
+    }
+
+    .myfooter a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1rem;
+        padding-right: 20px;
+        transition: 0.7s;
+
+
+    }
+
+    .myfooter a:hover {
+        color: #F7DEB7;
+    }
+
+    .myfooter h3 {
+        color: rgb(255, 255, 255, 0.6);
+        font-size: 1.1rem;
+    }
+
+    .myfooter h3 span {
+        font-size: 0.8rem;
+    }
+
+}
+
+/* 手機版結束 */
